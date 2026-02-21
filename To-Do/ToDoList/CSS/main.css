@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url("https://picsum.photos/1200/800") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+#header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 3rem;
+    min-height: 25vh;
+    width: 100%;
+    color: white;
+}
+
+/* Form */
+form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+form input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+/* Todo List */
+#myUnOrdList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo {
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 0.5em;
+    border-radius: 30px;
+}
+
+.todo li {
+    padding: 7px;
+    font-size: 20px;
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.check-btn, .delete-btn {
+    font-size: 19px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    margin: 0 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
